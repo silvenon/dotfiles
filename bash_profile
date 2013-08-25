@@ -33,3 +33,6 @@ export PATH="./bin:$PATH"
 
 # PostgreSQL
 export PGHOST=localhost
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
