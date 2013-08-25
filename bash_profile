@@ -23,3 +23,7 @@ eval "$(rbenv init -)"
 
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+# Node
+# export NODE_PATH="/usr/local/lib/node_modules"
+export PATH="/usr/local/share/npm/bin:$PATH"
