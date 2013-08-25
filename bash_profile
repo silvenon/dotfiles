@@ -30,3 +30,6 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 
 # binstubs
 export PATH="./bin:$PATH"
+
+# PostgreSQL
+export PGHOST=localhost
