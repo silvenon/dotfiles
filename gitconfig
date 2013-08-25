@@ -1,8 +1,8 @@
 [user]
-  name = Janko Marohnić
-  email = janko.marohnic@gmail.com
+  name = Matija Marohnić
+  email = matija.marohnic@gmail.com
 [github]
-  user = janko-m
+  user = silvenon
 [alias]
   # short and pretty status
   st = status -sb
