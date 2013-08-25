@@ -11,6 +11,9 @@ stty -ixon
 # github.com/mislav/coral
 eval "$(~/.coral/libexec/coral init -)"
 
+# List vertically
+alias ls="ls -1"
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
