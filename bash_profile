@@ -20,3 +20,6 @@ eval "$(hub alias -s)"
 # github.com/sstephenson/rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
