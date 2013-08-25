@@ -15,7 +15,7 @@ eval "$(~/.coral/libexec/coral init -)"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # github.com/defunkt/hub
-alias git="hub"
+eval "$(hub alias -s)"
 
 # github.com/sstephenson/rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
