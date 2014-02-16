@@ -32,6 +32,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 
 # binstubs
+export PATH="./.binstubs:$PATH"
 export PATH="./bin:$PATH"
 
 # PostgreSQL

@@ -21,12 +21,6 @@ run_tests() {
 
   fi
 
-  if [[ -f script/rails || -f bin/rails ]]; then
-    test_command="spring $test_command"
-  else
-    test_command="bundle exec $test_command"
-  fi
-
   echo "$test_command"
   $test_command
 }
