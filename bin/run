@@ -1,0 +1,60 @@
+#!/bin/bash
+
+set -e
+
+run_file() {
+  clear
+
+  if [[ $1 =~ .rb$ ]]; then
+
+    if [[ -f Gemfile ]]; then
+      bundle exec ruby $1
+    else
+      ruby $1
+    fi
+
+  elif [[ $1 =~ .py$ ]]; then
+
+    python $1
+
+  elif [[ $1 =~ .c$ ]]; then
+
+    if [[ $(cat $1) =~ glut.h ]]; then
+      gcc $1 -o program -framework OpenGL -framework GLUT -w
+    else
+      gcc $1 -o program
+    fi
+
+    ./program
+
+  elif [[ $1 =~ .cpp$ ]]; then
+
+    if [[ $(cat $1) =~ glut.h ]]; then
+      g++ $1 -o program -framework OpenGL -framework GLUT -w
+    else
+      g++ $1 -o program
+    fi
+
+    ./program
+
+  elif [[ $1 =~ .l$ ]]; then
+
+    flex $1
+    gcc lex.yy.c -o program
+    ./program < $1
+
+  elif [[ $1 =~ .tex$ ]]; then
+
+    # `brew install rubber` (https://launchpad.net/rubber)
+    rubber --pdf --inplace $1
+
+    open "${1%.tex}.pdf"
+
+  else
+
+    ./$1
+
+  fi
+}
+
+run_file $*
