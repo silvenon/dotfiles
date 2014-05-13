@@ -40,6 +40,3 @@ export PGHOST=localhost
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# Grunt auto-completion
-eval "$(grunt --completion=bash)"
