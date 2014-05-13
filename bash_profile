@@ -22,7 +22,7 @@ eval "$(hub alias -s)"
 
 # github.com/sstephenson/rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
