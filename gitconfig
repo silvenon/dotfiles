@@ -1,6 +1,10 @@
 [user]
   name = Matija Marohnić
   email = matija.marohnic@gmail.com
+[credential]
+  helper = osxkeychain
+[hub]
+  protocol = https
 [github]
   user = silvenon
 [alias]
