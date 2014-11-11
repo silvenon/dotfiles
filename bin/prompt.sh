@@ -13,8 +13,9 @@ set_prompt() {
   if [[ -d .git ]]; then
     local git_branch="[${RED}`get_git_branch`${RESET}]"
   fi
+  local head="${BRIGHT_BLACK}\$${RESET}"
 
-  PS1="${path}${git_branch}$ "
+  PS1="${path}${git_branch}${head} "
 }
 
 PROMPT_COMMAND="set_prompt; ${PROMPT_COMMAND}"
