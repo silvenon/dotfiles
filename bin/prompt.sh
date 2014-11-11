@@ -11,11 +11,10 @@ get_ruby_version() {
 set_prompt() {
   local path="\w"
   if [[ -d .git ]]; then
-    local git_branch="${RED}`get_git_branch`${RESET}, "
+    local git_branch="[${RED}`get_git_branch`${RESET}]"
   fi
-  local ruby_version="${YELLOW}`get_ruby_version`${RESET}"
 
-  PS1="${path}[${git_branch}${ruby_version}]$ "
+  PS1="${path}${git_branch}$ "
 }
 
 PROMPT_COMMAND="set_prompt; ${PROMPT_COMMAND}"
