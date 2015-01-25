@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+git --no-pager diff --word-diff $2 $5
+exit 0
