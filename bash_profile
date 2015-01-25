@@ -44,3 +44,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Color folders and executables
 export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+
+# Cairo
+export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
