@@ -4,10 +4,10 @@
 # defaults to `patch`
 np() {
   trash node_modules &>/dev/null;
-  git pull origin master --rebase &&
+  git pull --rebase origin master &&
   npm install &&
   npm test &&
   npm version ${1:-patch} &&
   npm publish &&
-  git push origin master --follow-tags
+  git push --follow-tags origin master
 }
