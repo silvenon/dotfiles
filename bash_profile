@@ -50,3 +50,8 @@ export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 
 # Atom's apm develop path
 export ATOM_REPOS_HOME="$HOME/Code"
+
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
