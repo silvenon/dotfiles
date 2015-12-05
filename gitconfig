@@ -30,7 +30,7 @@
 [core]
   # a global .gitignore
   excludesfile = ~/.gitignore
-	editor = atom --wait
+	editor = vim
 [credential]
   # use mac's keychain for storing credentials
   helper = osxkeychain
