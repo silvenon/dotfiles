@@ -47,3 +47,7 @@
   wordRegex = "[^\\|\\.[:space:]]+"
 [diff "exif"]
   textconv = exiftool
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
