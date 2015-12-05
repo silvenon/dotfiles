@@ -43,5 +43,7 @@
   autosquash = true
 [diff "word"]
   command = ~/bin/word-diff
+[diff "cson"]
+  wordRegex = "[^\\|\\.[:space:]]+"
 [diff "exif"]
   textconv = exiftool
