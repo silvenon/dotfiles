@@ -1,6 +1,7 @@
 [user]
   name = Matija Marohnić
   email = matija.marohnic@gmail.com
+	signingkey = 042745AC
 [credential]
   helper = osxkeychain
 [hub]
@@ -51,3 +52,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true
