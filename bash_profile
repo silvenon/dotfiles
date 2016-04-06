@@ -55,3 +55,7 @@ export ATOM_REPOS_HOME="$HOME/Code"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+# Go
+export GOPATH=$HOME
+export PATH="$PATH:$GOPATH/bin"
