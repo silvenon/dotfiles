@@ -59,3 +59,6 @@ source $(brew --prefix nvm)/nvm.sh
 # Go
 export GOPATH=$HOME
 export PATH="$PATH:$GOPATH/bin"
+
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/Code/work/prodeal360/bin:$PATH"
