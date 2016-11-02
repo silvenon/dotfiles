@@ -22,6 +22,11 @@
   rb = rebase
   br = branch
   d = diff
+  it = !git init && git commit -m \"root\" --allow-empty
+  commend = commit --amend --no-edit
+  please = push --force-with-lease
+  stsh = stash --keep-index
+  staash = stash --include-untracked
 [branch]
   # new branches are setup to use rebase when pulling
   autosetuprebase = always
