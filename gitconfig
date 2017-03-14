@@ -37,6 +37,7 @@
   # a global .gitignore
   excludesfile = ~/.gitignore
 	editor = vim
+	attributesfile = ~/.gitattributes
 [credential]
   # use mac's keychain for storing credentials
   helper = osxkeychain
